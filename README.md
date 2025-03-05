@@ -61,7 +61,6 @@ The **Login & Registration Page** is a user authentication interface that allows
 
 ## **8. Future Enhancements**
 
-- Backend integration with a database (e.g., Firebase, MySQL) for user authentication.
 - Password encryption for better security.
 - Implementing a "Forgot Password" feature.
 - Adding OAuth login options (Google, Facebook, etc.).
