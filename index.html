@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+    
+    <!-- Google Sign-In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script defer src="script2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>Login</h1>
+            <div id="edit">
+                <label for="loginEmail">Email</label>
+                <div id="box">
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div id="edit">
+                <label for="loginPassword">Password</label>
+                <div id="box">
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <p><a href="#">Forgot Password?</a></p>
+            <div id="edit">
+                <button onclick="validateLogin()">LOGIN</button>
+            </div>
+
+            <!-- Social Sign In Section -->
+            <div id="signup">
+                <p id="p">OR</p>
+                <!-- <div id="icon-container">
+                    <i class="fa-brands fa-facebook" id="icon2"></i>
+                    <i class="fa-brands fa-square-twitter" id="icon3"></i>
+                    <i class="fa-brands fa-google" id="icon4"></i>
+                </div> -->
+
+                <!-- Google Sign-In Button -->
+                <div id="google-signin-button"></div>
+            </div>
+
+            <p>New user? <a href="#" onclick="showRegister()">Register here</a></p>
+        </div>
+
+        <div class="register hidden">
+            <h1>Register</h1>
+            <div id="edit">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div id="edit">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div id="edit">
+                <label for="contact">Contact Number</label>
+                <div id="contact-box">
+                    <select id="countryCode">
+                        <option value="+1">+1</option>
+                        <option value="+91" selected>+91</option>
+                        <option value="+44">+44</option>
+                    </select>
+                    <input type="tel" id="contact" placeholder="Enter 10-digit number" required>
+                </div>
+            </div>
+            <div id="edit">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+            </div>
+            <div id="edit">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            </div>
+            <button onclick="validateRegister(event)">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+        </div>
+        
+        <div class="image">
+            <img src="Team Coding GIF by Goscha Graf.gif" alt="Illustration">
+        </div>
+    </div>
+</body>
+</html>

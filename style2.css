@@ -1,0 +1,179 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(69deg, rgba(34,193,195,1) 0%, rgba(170,88,128,1) 50%, rgb(109, 18, 145) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 60%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login & Register Sections */
+.login, .register {
+    width: 50%;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+#edit {
+    margin-bottom: 1rem;
+}
+
+#edit label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Styling for the Country Code and Contact Input Inline */
+#contact-box {
+    display: flex;
+    align-items: center;
+}
+
+#countryCode {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    background: white;
+    outline: none;
+}
+
+#contact {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(69deg, rgba(34,193,195,1) 0%, rgba(170,88,128,1) 50%, rgb(109, 18, 145) 100%);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Links */
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p a {
+    text-decoration: none;
+    color: rgba(109, 18, 145, 1);
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Hide Register Form Initially */
+.hidden {
+    display: none;
+}
+
+/* Image Section */
+.image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Sign In Social Icons Section */
+#signup {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+#icon-container i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#icon2 {
+    color: #1877f2; /* Facebook */
+}
+
+#icon3 {
+    color: #1da1f2; /* Twitter */
+}
+
+#icon4 {
+    color: #db4437; /* Google */
+}
+
+#icon-container i:hover {
+    transform: scale(1.2);
+}
+
