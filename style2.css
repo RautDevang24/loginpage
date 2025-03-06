@@ -46,6 +46,10 @@ h1 {
     font-weight: bold;
 }
 
+#google-signin-button{
+    text-align: center;
+}
+
 #box {
     display: flex;
     align-items: center;
